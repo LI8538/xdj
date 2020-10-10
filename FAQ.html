@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>联系方式</title>
+<title>你问我答</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Sublime project">
@@ -10,6 +10,44 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/contact.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<style type="text/css">
+	.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
 </head>
 <body>
 
@@ -251,78 +289,78 @@
 					</div>
 				</div>
 -->
-				<!-- Contact Info -->
-				<div class="col-lg-3 offset-xl-1 contact_col">
-					<div class="contact_info">
-						<div class="contact_info_section">
-							<div class="contact_info_title">联系方式</div>
+				<!-- FAQ -->
+    <h2 style="color: black;">问答</h2>
+<button class="accordion">如何下单？</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-							<ul>
-								<li>微信加好友: <span>cc-bdx</span></li>
-					<!--**											
-							    <li>Email: <span>ideauxc@gmail.com</span></li>
-							    
-								<li>地址：6 avenue rogers salengro,33130 bègles</li>
-								<li>交通：tram C线 或者 11路公交站</li>
-					-->			
-							</ul>
-						</div>
-					<img src="images/WechatQR.jpg" style="width: 150px;">
-<!--**				
-						<div class="contact_info_section">
-							<div class="contact_info_title">Shippiing & Returns</div>
-							<ul>
-								<li>Phone: <span>+53 345 7953 3245</span></li>
-								<li>Email: <span>yourmail@gmail.com</span></li>
-							</ul>
-						</div>
-						<div class="contact_info_section">
-							<div class="contact_info_title">Information</div>
-							<ul>
-								<li>Phone: <span>+53 345 7953 3245</span></li>
-								<li>Email: <span>yourmail@gmail.com</span></li>
-							</ul>
-						</div>-->
-					</div>
-				</div>
-			</div>
-			<div class="row map_row">
-				<div class="col">
+<button class="accordion">下单后可否配送？</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-					<!-- Google Map 
-					<div class="map">
-						<div id="google_map" class="google_map">
-							<div class="map_container">
-								<div id="map"></div>
-							</div>
-						</div>
-					</div>
+<button class="accordion">可否上门取？</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-				</div>
-			</div>
-		</div>
-	</div>
--->
-    <div>
-   <h2 style="color: black; text-align: center;">我们是谁？</h2>	
+<button class="accordion">是否有售后服务？</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
-<p>小当家是波尔多的一个小网页，我们站上有精心挑选的产品，需要的朋友可以下单购买， <span style="text-decoration: underline;color: tomato;"> 尽量做最好的服务，可配送上门。 </span><br>
-我们除了产品外，还有个几个页面给需要的波尔多华人留的： <br>
-- <span style="text-decoration: underline;color: green">招聘公告栏</span>：是专门给波尔多需要找工人的老板留的，希望老板们踊跃和我们合作，可以放免费的招聘广告，可以让更多需要找工的人联系你们。 <br>
--<span style="text-decoration: underline;color: green;">生活小助手</span>：会各种服务类的华人可以联系我们，可以帮你们放免费的服务类广告，包括（会教中文的老师，会教乐器的老师，会装修的华人团队，可以帮别人带孩子的保姆，本地华人会计，本地华人律师,本地华人旅游团队，本地华人接送机....etc）有各种技能的都可以找我们放免费广告。 <br>
--<span style="text-decoration: underline;color: green;">房屋出租</span>：有房源的可以找我们放免费广告，让更多需要租房的华人找到合适的房子。 <br>
-希望小当家能让更多的波尔多华人看到，帮到更多需要的人，也希望大家能多多支持！</p></div>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+
+
+
+
+
 	<!-- Footer -->
 	
 	<div class="footer_overlay"></div>
 	<footer class="footer">
-		<div class="footer_background" style="background-image:url(images/footer.jpg)"></div>
+		<div class="footer_background" style="background-image:url(#)"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
 						<div class="footer_logo"><a href="#">小当家</a></div>
-						<div class="copyright ml-auto mr-auto"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<div class="copyright ml-auto mr-auto">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="mailto:wanglijtm@gmail" target="_blank">WL</a>
 </div>
 <!--
