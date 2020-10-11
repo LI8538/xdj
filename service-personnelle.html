@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>招聘公告栏</title>
+<title>生活小助手</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Sublime project">
@@ -10,6 +10,44 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/contact.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<style type="text/css">
+	.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
 </head>
 <body>
 
@@ -197,7 +235,7 @@
 								<div class="breadcrumbs">
 									<ul>
 										<li><a href="index.html">首页</a></li>
-										<li>招聘公告栏</li> 
+										<li>生活小助手</li>
 									</ul>
 								</div>
 							</div>
@@ -251,76 +289,68 @@
 					</div>
 				</div>
 -->
-				<!-- Contact Info -->
-				<div class="col-lg-3 offset-xl-1 contact_col">
-					<div class="contact_info">
-						<div class="contact_info_section">
-							<div class="contact_info_title">招聘公告栏</div>
-				<br>
-									<p> 添加广告加微信好友: cc-bdx</p>
+				<!-- FAQ -->
+    <div style="margin: 18px;">
+    <h2 style="color: black;">生活小助手</h2>
 									<p>
-                                    <span style="text-decoration: underline;color: green">招聘公告栏</span>：是专门给波尔多需要找工人的老板留用的版块，希望老板们踊跃和我们合作，可以通过我们放免费的招聘广告，可以让更多需要找工的本地华人联系你们。</p> <br>		
-                                   	
-<!--**
-							<ul>
-								<li>添加广告加微信好友: <span>cc-bdx</span></li>
-																
-							    <li>Email: <span>ideauxc@gmail.com</span></li>
-							    
-								<li>地址：6 avenue rogers salengro,33130 bègles</li>
-								<li>交通：tram C线 或者 11路公交站</li>
-							
-							</ul>
-						</div>
-						<div>
--->	
+                                    <span style="text-decoration: underline;color: green">生活小助手</span>：会各种服务类的华人可以联系我们，可以帮你们放免费的服务类广告，包括（会教中文的老师，会教乐器的老师，会装修的华人团队，可以帮别人带孩子的保姆，本地华人会计，本地华人律师,本地华人旅游团队，本地华人接送机,会修理手机电脑或者车之类的师傅....etc）有各种技能的都可以找我们放免费广告。 </p> <br>
+                                    <p>添加广告加微信好友: cc-bdx</p>
+    </div>                                
+<button class="accordion">装修装潢师傅，修理手机和电脑类</button>
+<div class="panel">
+  <p>如果您会装修，包各种工程可以加入我们，修手机，修电脑，修车，会修理上各种技能的人欢迎加入我们</p>
+</div>
 
-<!--**				
-						<div class="contact_info_section">
-							<div class="contact_info_title">Shippiing & Returns</div>
-							<ul>
-								<li>Phone: <span>+53 345 7953 3245</span></li>
-								<li>Email: <span>yourmail@gmail.com</span></li>
-							</ul>
-						</div>
-						<div class="contact_info_section">
-							<div class="contact_info_title">Information</div>
-							<ul>
-								<li>Phone: <span>+53 345 7953 3245</span></li>
-								<li>Email: <span>yourmail@gmail.com</span></li>
-							</ul>
-						</div>-->
-					</div>
-				</div>
-			</div>
-			<div class="row map_row">
-				<div class="col">
-<!--招聘内容-->					
-               <div>
+<button class="accordion">教育授课类</button>
+<div class="panel">
+  <p>如果您会教中文，教乐器，教摄影，教画画，教各种课程的欢迎加入我们，让波尔多需要的华人可以找到你们</p>
+</div>
 
-               </div>
+<button class="accordion">个人护理类</button>
+<div class="panel">
+  <p>如果您会理发，或者会做美甲，还是会中医推拿，针灸，各种个人护理类的欢迎加入我们
+  </p>
+</div>
+
+<button class="accordion">看护类</button>
+<div class="panel">
+  <p>会带孩子的阿姨，会做月嫂，做过保姆类的波尔多华人，欢迎加入我们的看护类</p>
+</div>
+
+<button class="accordion">个体类</button>
+<div class="panel">
+  <p>波尔多会计，律师，做公证的，做翻译的，旅游团队，接送机或者会其他的技能，欢迎加入我们</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 
-					<!-- Google Map 
-					<div class="map">
-						<div id="google_map" class="google_map">
-							<div class="map_container">
-								<div id="map"></div>
-							</div>
-						</div>
-					</div>
 
-				</div>
-			</div>
-		</div>
-	</div>
--->
 
-	<!-- Footer 
+
+
+
+
+	<!-- Footer -->
 	
 	<div class="footer_overlay"></div>
 	<footer class="footer">
-		<div class="footer_background" style="background-image:url(images/footer.jpg)"></div>
+		<div class="footer_background" style="background-image:url(#)"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -329,8 +359,6 @@
 						<div class="copyright ml-auto mr-auto">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="mailto:wanglijtm@gmail" target="_blank">WL</a>
 </div>
--->	
-
 <!--
 						<div class="footer_social ml-lg-auto">
 							<ul>
@@ -340,7 +368,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
--->					
+-->						
 					</div>
 				</div>
 			</div>
