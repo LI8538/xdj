@@ -21,6 +21,7 @@
 <link rel="stylesheet" type="text/css" href="styles/contact.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
 <style type="text/css">
+/*accordion*/
 	.accordion {
   background-color: #eee;
   color: #444;
@@ -56,6 +57,39 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+/*end accordion*/
+
+.info{
+	color: tomato;
+}
+
+h2{
+  color: tomato;
+}
+
+
+
+.tete{
+	margin: 18px;
+}
+
+.tete p{
+	background-color: yellow;
+	color: black; }
+
+#contenu{
+	text-decoration: underline;
+	color: green;
+}
+
+h5{
+  color: blue;
+}
+
+.pub{
+  border-bottom: solid;
+  color: #333;
 }
 </style>
 </head>
@@ -301,19 +335,19 @@
 				</div>
 -->
 				<!-- FAQ -->
-    <div style="margin: 18px;">
-    <h2 style="color: black;">生活小助手</h2>
+    <div class="tete">
+    <h2>生活小助手</h2>
 									<p>
-                                    <span style="text-decoration: underline;color: green">生活小助手</span>：会各种服务类的华人可以联系我们，可以帮你们放免费的服务类广告，包括（会教中文的老师，会教乐器的老师，会装修的华人团队，可以帮别人带孩子的保姆，本地华人会计，本地华人律师,本地华人旅游团队，本地华人接送机,会修理手机电脑或者车之类的师傅,搬家的，跑腿的....etc）有各种技能的都可以找我们放免费广告。 </p> <br>
-                                    <p>添加广告加微信好友: cc-bdx</p>
+                                    <span id="contenu">生活小助手</span>：会各种服务类的华人可以联系我们，可以帮你们放免费的服务类广告，包括（会教各种语言的老师，会教乐器的老师，会装修的华人团队，可以帮别人带孩子的保姆，本地华人会计，本地华人律师,本地华人旅游团队，本地华人接送机,会修理手机电脑或者车之类的师傅,搬家的，跑腿的....etc）有各种技能的都可以找我们放免费广告,希望能帮你们揽到更多的活。 </p> <br>
+                                    <p>添加免费广告加微信好友: cc-bdx</p>
     </div>
 <!--装修装潢师傅，修理手机和电脑类-->
-                <button class="accordion">装修装潢师傅，修理手机和电脑类</button>
+                <button class="accordion">装修装潢师傅，修理类</button>
                     <div class="panel">
-                           <p style="color:tomato;">如果您会装修，包各种工程可以加入我们，修手机，修电脑，修车，会修理上各种技能的人欢迎加入我们</p>
+                           <p class="info">如果您会装修，包各种工程可以加入我们，修手机，修电脑，修车，在修理上有各种技能的人欢迎加入我们</p>
 
-                           <h5 style="color: blue;">专业餐馆和住家装修团队</h5>
-                           <p style="border-bottom: solid;color: #333;">      
+                           <h5>专业餐馆和住家装修团队</h5>
+                           <p class="pub">      
                            我司从事装修设计行业10来多年，现已发展到经验丰富的多人团队，专接餐馆和住家装修包括（电工，木工，安放瓷砖，水管装置，装潢，油漆，餐馆烟囱，各种大设备安装），大工程的可以给做devis，波尔多和附近城市的华人可以咨询，
                            请联系并说明来自小当家的广告： <br>
                            良武: 07 78 10 83 30</p>
@@ -321,39 +355,39 @@
 <!--教育授课类-->
                 <button class="accordion">教育授课类</button>
                     <div class="panel">
-                          <p style="color: tomato;">如果您会教中文或者其他语言，教乐器，教摄影，教画画，教各种课程的欢迎加入我们，让波尔多需要的华人可以找到你们</p>
-                          <h5 style="color: blue;">线上专业中文课</h5>
-                          <p style="border-bottom: solid; color: #333;">
+                          <p class="info">如果您会教中文或者其他语言，教乐器，教摄影，教画画，教舞蹈，教运动类的，教健身，教马术，教茶道，教各种课程的欢迎加入我们，让波尔多需要的华人可以找到你们</p>
+                          <h5>线上专业中文课</h5>
+                          <p class="pub">
                           2017年毕业于四川师范大学中文系，持有教师资格证书；2017-2019年任教于波尔多蒙田大学中文系。目前致力于法国华人少儿中文教育。可提供六岁以上少儿沉浸式中文教育。 <br>
                           如果您的孩子想学习中文，请联系并说明是来自小当家的广告： <br>
                           宋东明：07 82 25 25 71 <br>
                           微信号：Philipofpanshi
                           </p>
 
-                         <h5 style="color: blue;">线上教授少儿英语</h5>
-                         <p style="border-bottom: solid; color: #333;">现读Université Paul Valéry Montpellier 3 LEA 应用外语为法英中，英法C1 擅长英文口语，有教小朋友的经验，并且开展线上一对一辅导，想要给家里小孩学一口流利的英文的，请联系并说明来自小当家的广告： <br>
+                         <h5>线上教授少儿英语</h5>
+                         <p class="pub">现读Université Paul Valéry Montpellier 3 LEA 应用外语为法英中，英法C1 擅长英文口语，有教小朋友的经验，并且开展线上一对一辅导，想要给家里小孩学一口流利的英文的，请联系并说明来自小当家的广告： <br>
                          罗千慧：06 58 15 91 23</p>
 
-                         <h5 style="color: blue;">线上教授英语和西班牙语</h5>
-                         <p style="border-bottom: solid;color: #333;">现读Universidad Carlos lll Madrid 与 Université de Paris-Saclay，
+                         <h5>线上教授英语和西班牙语</h5>
+                         <p class="pub">现读Universidad Carlos lll Madrid 与 Université de Paris-Saclay，
                          经济学，中西混血 ，西班牙语和中文为母语，英语C1有英国美国 交换留学经历，法语B2，可线上教少儿英语或者成人西班牙语，一对一教程，想要学一门新的语言的，请联系并说明来自小当家的广告：  <br>
                          Andrés-Yi Pérez-Fan(范义)：07 64 77 10 47 </p>
 
-                        <h5 style="color: blue;">专业萨克斯授课</h5>
-                        <p style="border-bottom: solid;color: #333;">     
+                        <h5>专业萨克斯授课</h5>
+                        <p class="pub">     
                         2019年毕业于深圳大学金钟音乐学院音乐表演系，
                         现攻读波尔多音乐学院硕士研究生，并且可一对一教授萨克斯，面向初学者大人和小孩，需要培养一门新技能的波尔多华人，请联系并说明来自小当家的广告：  <br>
                         黄姿才：06 60 40 51 82</p>
 
-                        <h5 style="color: blue;">专业教画画与雕塑</h5>
-                        <p style="border-bottom: solid;color: #333;"> 
+                        <h5>专业教画画与雕塑</h5>
+                        <p class="pub"> 
                         大家好，同胞们好，本人来自山东威海，自2013年为了艺术学习来到法国。毕业于天津美术学院油画系获学士学位，来法后毕业于波尔多美院艺术部，获DNAP国家造型美术本科文凭和DNSEP国家造型美术硕士文凭。目前我在Floirac有个艺术家工作室。 <br>
                         带着较深的艺术功底和开放的艺术精神，糅合东西方两种艺术教育的观点，我希望喜欢画画或做雕塑的朋友们，或是想要了解的人们都可以一起共享我的艺术经验。<br>现开放5岁以上的儿童或成人的课程。可上门一对一辅导 <br> 需要预定课程的波尔多华人
                         欢迎联系并说明来自小当家的广告：  <br>
                         杨君柳：06 60 18 70 92</p>
 
-                        <h5 style="color: blue;">教中文</h5>
-                        <p style="border-bottom: solid;color: #333;"> 
+                        <h5>教中文</h5>
+                        <p class="pub"> 
                         时光荏苒，本人自13年来到法国已有七年，我毕业于波尔多美术学院，获国家造型美术本科与硕士文凭。现今于Floirac与一群艺术家与手工业者一起分享一个很大的工作室。有过教法国人中文的经验，很高兴能继续将美丽的中文在法国发扬光大。把听、说、读、写和交流循序渐进，我会根据大家的需要找到适合每个人的学习方式。我相信持之以恒，交流不是问题，写汉字更不是问题。<br>现开放5岁以上的儿童或成人的课程。可上门或者线上辅导 <br>需要预定课程的波尔多华人
                         欢迎联系并说明来自小当家的广告：  <br>
                         杨君柳：06 60 18 70 92</p>
@@ -361,9 +395,9 @@
 <!--文职类-->
                 <button class="accordion">文职类</button>
                     <div class="panel">
-                        <p style="color: tomato;">波尔多会计，律师，做公证的，做翻译的，室内设计，图纸设计，或者会其他的文职工作的华人，欢迎加入我们</p>
-                        <h5 style="color: blue;">专业会计</h5>
-                        <p style="border-bottom: solid;color: #333;">本人提供如下资源及服务： <br>
+                        <p class="info">波尔多会计，律师，做公证的，做翻译的，室内设计，图纸设计，银行人员，或者其他文职工作的华人，欢迎加入我们</p>
+                        <h5>专业会计</h5>
+                        <p class="pub">本人提供如下资源及服务： <br>
                         公司成立/商标注册/包银行开户！包银行开户！包银行开户！
                         账务托管，审计，法律咨询，跨境支付，材料翻译审核,
                         自由职业者公司注册！ <br>
@@ -372,8 +406,8 @@
                         请联系并说明来自小当家的广告： <br>
                         秋冬玲：06 72 01 94 76</p>
 
-                        <h5 style="color: blue;">专业摄影师拍摄服务</h5>
-                        <p style="border-bottom: solid;color: #333;">      
+                        <h5>专业摄影师拍摄服务</h5>
+                        <p class="pub">      
                         从事摄影行业多年，曾任中汽联官方摄影记者和国内各类音乐节活动现场官方摄影师，现可提供波尔多地区人物外拍，食品拍摄（餐馆菜单图片），空间拍摄，活动跟拍等。 <br> 
                         需要的请联系并说明来自小当家的广告： <br>
                         郭明松: 06 67 40 41 20</p>
@@ -381,26 +415,26 @@
 <!--个人护理类-->
                 <button class="accordion">个人护理类</button>
                     <div class="panel">
-                        <p style="color: tomato;">如果您会理发，或者会做美甲，或者会中医推拿，针灸，各种个人护理类的欢迎加入我们
+                        <p class="info">如果您会理发，或者会做美甲，按摩或者会中医推拿，针灸，各种个人护理类的欢迎加入我们
                         </p>
                     </div>
 <!--看护与卫生类-->
                 <button class="accordion">看护与卫生类</button>
                     <div class="panel">
-                        <p style="color: tomato;">会带孩子的阿姨，会做月嫂，做过保姆类的，或者可以在波尔多上门打扫的，欢迎加入我们的看护类</p>
+                        <p class="info">会带孩子的阿姨，会做月嫂，做过保姆类的，或者可以在波尔多上门打扫的，各种看护类的欢迎加入我们的看护类</p>
                     </div>
 <!--预定类和其他-->
                 <button class="accordion">预定类和其他</button>
                     <div class="panel">
-                       <p style="color: tomato;">会做蛋糕的，接旅游的团队，接送机或者帮人搬家的，跑腿的，欢迎加入我们</p>
-                       <h5 style="color: blue;">波尔多定制生日蛋糕服务</h5>
-                       <p style="border-bottom: solid;color: #333;">      
+                       <p class="info">会做蛋糕的，接旅游的团队，接送机或者帮人搬家的，跑腿的，波尔多出租车司机，各种预定类职业或者以上无法归类的欢迎加入我们，让更多人看到你们的服务</p>
+                       <h5>波尔多定制生日蛋糕服务</h5>
+                       <p class="pub">      
                        纯手工甜品私房屋，承接中式生日蛋糕，各类小甜品，纯手工，选用当季新鲜水果当天制作，还有各类小甜品月饼等等，欢迎喜欢的朋友来电咨询，<span style="background-color: pink;">生日蛋糕提前两天下单。 </span> <br>请联系并说明来自小当家的广告： <br>
                        电话号码: 06 05 93 94 23<br> 
                        微信号: xuna2005 </p>
 
-                       <h5 style="color: blue;">波尔多搬家服务</h5>
-                       <p style="border-bottom: solid;color: #333;">      
+                       <h5>波尔多搬家服务</h5>
+                       <p class="pub">      
                        我们替人搬家，或者运重东西，满足波尔多或者附近地区的需求，并且服务周到，有需要的波尔多华人可以放心找我们。 <br>请联系并说明来自小当家的广告： <br>
                        良武: 07 78 10 83 30</p>
                     </div>

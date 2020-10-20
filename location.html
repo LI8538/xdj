@@ -58,12 +58,37 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+/*end accordion*/
 /*img-locatin*/
 .dropdown{
   border-bottom: solid;
   color: tomato;
 }
 
+.tete{
+	margin: 18px;
+}
+
+h2{
+	color: tomato;
+}
+
+.contenu{
+	background-color: yellow;
+	color: black;
+}
+
+.info{
+   color: tomato;   
+}
+
+h5{
+   color: blue;
+}
+
+.pub{
+  color: #333;
+}
 </style>
 </head>
 <body>
@@ -307,25 +332,28 @@
 				</div>
 -->
 				<!-- 房源分类-->
-                <div style="margin: 18px;">
-                            <h2 style="color: black;">房屋出租</h2>
-							    <p>
-                                <span style="text-decoration: underline;color: green">房租出租</span>：此页面留给有房源的人发广告使用，如有房源出租的可以通过我们放免费的出租广告，让更多需要租房的人方便联系你们，更快地出租房间或者整套。 </p> <br>
-                                    <p>添加广告加微信好友: cc-bdx</p>
+                <div class="tete">
+                            <h2>房屋出租</h2>
+							    <p class="contenu">
+                                <span style="text-decoration: underline;color: green">房租出租</span>：此页面留给有房源的人发广告使用，如有房源出租的可以通过我们放免费的出租广告，让更多需要租房的人方便联系你们，更快地出租房间或者整套。 <br>
+                                (如果您需要租房的也可以通过我们发放广告)
+                                <br>
+                                <br>
+                                添加免费广告加微信好友: cc-bdx</p>
 
                 </div> 
 <!--bordeaux房源-->                                  
                     <button class="accordion">Bordeaux 房源</button>
                         <div class="panel">
-                                <p style="color: tomato;">如果您有Bordeaux房源的可以联系我们，欢迎联系我们并加入此板块</p>
+                                <p class="info">如果您有Bordeaux房源的可以联系我们，欢迎联系我们并加入此板块</p>
                         </div>
 <!--Talence 房源--> 
                     <button class="accordion">Talence 房源</button>
                         <div class="panel">
-                                <p style="color: tomato;">如果您有Talence房源的欢迎联系我们并加入此板块</p>
+                                <p class="info">如果您有Talence房源的欢迎联系我们并加入此板块</p>
                                 <!--出租广告-->
-                                    <h5 style="color: blue;">Talence出租一个房间</h5>
-                                    <p>      
+                                    <h5>Talence出租一个房间</h5>
+                                    <p class="pub">      
                                     3 allée des foreurs,Talence <br>
                                     包水，电，网，暖气，400欧一个月，要求女性,请联系并说明来自小当家的广告： <br>
                                     电话号码: 07 81 84 03 98
@@ -340,22 +368,22 @@
 <!--Bègles 房源--> 
                     <button class="accordion">Bègles 房源</button>
                         <div class="panel">
-                                <p style="color: tomato;">如果您有Bègles房源的欢迎联系我们并加入此板块</p>
+                                <p class="info">如果您有Bègles房源的欢迎联系我们并加入此板块</p>
                         </div>
 <!--Mériganc 房源--> 
                     <button class="accordion">Mériganc 房源</button>
                         <div class="panel">
-                                <p style="color: tomato;">如果您有Mériganc房源的欢迎联系我们并加入此板块</p>
+                                <p class="info">如果您有Mériganc房源的欢迎联系我们并加入此板块</p>
                         </div>
 <!--Villenave-d‘Ornon 房源--> 
                     <button class="accordion">Villenave-d‘Ornon 房源</button>
                         <div class="panel">
-                                <p style="color: tomato;">如果您有Villenave-d'Ornon房源的欢迎联系我们并加入此板块</p>
+                                <p class="info">如果您有Villenave-d'Ornon房源的欢迎联系我们并加入此板块</p>
                         </div>
  <!--Cenon,Floirac,Bastide房源或者其他的地区-->                    
                     <button class="accordion">Cenon,Floirac,Bastide房源或者其他的地区</button>
                         <div class="panel">
-                                <p style="color: tomato;">如果您有Cenon,Floirac,Bastide房源或者其他地区房源的欢迎联系我们并加入此板块</p>
+                                <p class="info">如果您有Cenon,Floirac,Bastide房源或者其他地区房源的欢迎联系我们并加入此板块</p>
                         </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
