@@ -17,6 +17,52 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+
+
+
+
+    <script language="JavaScript">
+      while(true) {
+        var password = "";
+        password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
+        if(password != '1234') {
+          alert("密码不正确,无法进入本站!!");
+        } else {
+          break;
+        }
+      }
+    </script>
+
+
+<!--
+<script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('请输入密码','密码');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "1234") {
+alert('You Got it Right!');
+window.open('http://xdj.fr/Projet-X');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</script>
+<center>
+<form>
+<input type="button" value="入口密码" onClick="passWord()">
+</form>
+</center>
+-->
+
 </head>
 <body>
 <div style="text-align: center;">
@@ -53,32 +99,7 @@
 </script>
 
 
-<script>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "1234") {
-alert('You Got it Right!');
-window.open('www.wikihow.com');
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
-</script>
-<center>
-<form>
-<input type="button" value="Enter Protected Area" onClick="passWord()">
-</form>
-</center>
+
 
 
 </body>
